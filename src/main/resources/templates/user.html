@@ -6,6 +6,27 @@
 <body>
 <h1>User, welcome spring boot security page!</h1>
 
+<!--    <form th:method="GET" th:action="@{/user}" th:object="${user}">-->
+
+<!--        <h1>Your data:</h1>-->
+<!--        <label for="id">The id: </label>-->
+<!--        <input  id="id" type="text" th:field="*{id}" readonly>-->
+<!--        <br>-->
+<!--        <br>-->
+<!--        <label for="name" >Edit name: </label>-->
+<!--        <input id="name" type="text" th:field="*{name}" readonly>-->
+
+<!--        <br>-->
+<!--        <br>-->
+<!--&lt;!&ndash;        <div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <label>Role: </label>&ndash;&gt;-->
+<!--&lt;!&ndash;            <span th:text="${user.role}"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--    </form>-->
+
+<br>
+<br>
+<a th:href="@{/admin}">Show all users</a>
 
 </body>
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add User</title>
+</head>
+<body>
+<form th:method="POST" th:action="@{/admin/updateChanges}" th:object="${user}">
+
+    <h1>Edit the fields!</h1>
+    <label for="id">The id: </label>
+    <input  id="id" type="text" th:field="*{id}" readonly>
+    <br>
+    <br>
+    <label for="name" >Edit name: </label>
+    <input id="name" type="text" th:field="*{name}">
+    <br>
+    <br>
+<!--    <label for="lastName" >Edit lastname: </label>-->
+<!--    <input id="lastName" type="text" th:field="*{lastName}">-->
+    <input type="submit" value="Save changes!">
+</form>
+</body>
+</html>
